@@ -4,16 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=h1, initial-scale=1.0" />
-    <title>GitHub exercise project</title>
+    <title>Interactive Blood Pressure Chart</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Hello GitHub</h1>
-    <form>
-      <input type="email" placeholder="Enter your email" />
-      <input type="password" placeholder="Enter your password" />
-      <input type="submit" value="Login" />
+    <h1>Blood pressure chart</h1>
+    <h2>
+      Here you can enter your blood pressure measurement data and obtain a
+      calculated average blood pressure level reading, accompanied with
+      personalized insights according to the result.
+    </h2>
+    <p>
+      For a reliable estimate of your average blood pressure, it is recommended
+      that you follow these guidelines:
+    </p>
+    <ul>
+      <li>
+        Measure your blood pressure in a calm surrounding, after at least 10-15
+        minutes of rest (sitting or lying down).
+      </li>
+      <li>
+        Measure the blood pressure 2 times within 5-10 minutes in the morning
+        (shortly after waking up) and 2 times in the evening in a similar way,
+        on 5 different days.
+      </li>
+      <li>
+        If you have been prescribed mediaction for high blood pressure, you
+        should take it normally during the days you do these measurements.
+      </li>
+      <li>Make sure your blood pressure meter is functioning properly.</li>
+    </ul>
+
+    <form id="blood-pressure-form">
+      Day 1 morning
+      <input type="number" placeholder="Systolic blood pressure" id="sys1" /> /
+      <input type="number" placeholder="Diastolic blood pressure" id="dias1" />
+      <br />
+      Day 1 morning
+      <input type="number" placeholder="Systolic blood pressure" id="sys2" /> /
+      <input type="number" placeholder="Diastolic blood pressure" id="dias2" />
+      <br />
+      <input type="submit" value="Calculate" />
     </form>
+    <p id="result"></p>
     <script src="script.js"></script>
   </body>
 </html>
